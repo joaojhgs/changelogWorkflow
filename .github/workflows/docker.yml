@@ -3,9 +3,8 @@ name: Build
 on:
   workflow_dispatch:
   push:
-    branches:    
-      - staging
-    tags:        
+    branches: [staging]
+    tags:
       - '*.*.*'
 
 jobs:
