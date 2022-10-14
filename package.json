@@ -1,6 +1,6 @@
 {
   "name": "changelogWorkflow",
-  "version": "22.10.16",
+  "version": "22.10.22",
   "main": "index.js",
   "repository": "git@github.com:joaojhgs/changelogWorkflow.git",
   "author": "joaohgs <joaosperandio@alunos.utfpr.edu.br>",
