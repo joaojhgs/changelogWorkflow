@@ -35,3 +35,7 @@ jobs:
         run: |
           git tag $tag
           git push origin $tag
+
+      env:
+          tag: ${{ inputs.tag }}
+          repository: ${{ GITHUB_REPOSITORY }}
