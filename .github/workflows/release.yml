@@ -6,7 +6,6 @@ on:
       tag:
         description: 'Tag/Version name'
         required: true
-        default: 'warning'
         type: string
 
 jobs:
