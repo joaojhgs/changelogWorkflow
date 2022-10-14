@@ -1,6 +1,6 @@
 {
   "name": "changelogWorkflow",
-  "version": "1.0.0",
+  "version": "$tag"1.0.0",
   "main": "index.js",
   "repository": "git@github.com:joaojhgs/changelogWorkflow.git",
   "author": "joaohgs <joaosperandio@alunos.utfpr.edu.br>",
