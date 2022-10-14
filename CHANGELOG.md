@@ -1,6 +1,8 @@
 # CHANGELOG
 ## Unreleased
 
+## [22.10.13-5](https://github.com/joaojhgs/changelogWorkflow/releases/tag/22.10.13-5)
+
 ## [22.10.13-4](https://github.com/joaojhgs/changelogWorkflow/releases/tag/22.10.13-4)
 
 ## Fix
