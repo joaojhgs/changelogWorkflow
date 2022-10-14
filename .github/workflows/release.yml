@@ -20,22 +20,18 @@ jobs:
 
       - name: Update changelog and package version
         run: |
-          sed -i '3 i \\n## [$tag](https://github.com/$repository/releases/tag/$tag)' CHANGELOG.md
-          sed -i 's/"version": "*"/"version": "$tag"/g' package.json
+          sed -i '3 i \\n## [${{ inputs.tag }}](https://github.com/${{ GITHUB_REPOSITORY }}/releases/tag/${{ inputs.tag }})' CHANGELOG.md
+          sed -i 's/"version": "*"/"version": "${{ inputs.tag }}"/g' package.json
 
       - name: Commit changes to chosen branch
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git stage .
-          git commit -m "Release version $tag"
+          git commit -m "Release version ${{ inputs.tag }}"
           git push
 
       - name: Create tag
         run: |
-          git tag $tag
-          git push origin $tag
-
-      env:
-          tag: ${{ inputs.tag }}
-          repository: ${{ GITHUB_REPOSITORY }}
+          git tag ${{ inputs.tag }}
+          git push origin ${{ inputs.tag }}
