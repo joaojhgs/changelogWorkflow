@@ -1,9 +1,12 @@
-name: Docker Image Build and Push to Docker Hub
+name: Build
 
 on:
   push:
-    tags:
-      - '**.*.*'
+    branches:    
+      - staging
+    # Sequence of patterns matched against refs/tags
+    tags:        
+      - '*.*.*'
 
 jobs:
   build:
