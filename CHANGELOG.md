@@ -1,6 +1,8 @@
 # CHANGELOG
 ## Unreleased
 
+## [22.10.16](https://github.com/joaojhgs/changelogWorkflow/releases/tag/22.10.16)
+
 ## [22.10.14](https://github.com/joaojhgs/changelogWorkflow/releases/tag/22.10.14)
 
 ## [22.10.13-15](https://github.com/joaojhgs/changelogWorkflow/releases/tag/22.10.13-15)
