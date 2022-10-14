@@ -20,7 +20,7 @@ jobs:
 
       - name: Update changelog and package version
         run: |
-          sed -i '3 i \\n## [${{ inputs.tag }}](https://github.com/${{ GITHUB_REPOSITORY }}/releases/tag/${{ inputs.tag }})' CHANGELOG.md
+          sed -i '3 i \\n## [${{ inputs.tag }}](https://github.com/${{ github.repository }}/releases/tag/${{ inputs.tag }})' CHANGELOG.md
           sed -i 's/"version": "*"/"version": "${{ inputs.tag }}"/g' package.json
 
       - name: Commit changes to chosen branch
