@@ -4,7 +4,6 @@ on:
   push:
     branches:    
       - staging
-    # Sequence of patterns matched against refs/tags
     tags:        
       - '*.*.*'
 
