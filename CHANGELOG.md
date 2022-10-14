@@ -1,6 +1,8 @@
 # CHANGELOG
 ## Unreleased
 
+## Fix
+* #1 - Fix workflow
 ## [22.10.13-3](https://github.com/joaojhgs/changelogWorkflow/releases/tag/22.10.13-3)
 
 ## [22.10.13-2](https://github.com/joaojhgs/changelogWorkflow/releases/tag/22.10.13-2)
