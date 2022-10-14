@@ -12,12 +12,16 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+
     steps:
+      - name: Checkout branch
       - uses: actions/checkout@v3
+
       - name: Update changelog and package version
       - run: |
           sed -i '3 i \\n## [$tag](https://github.com/$repository/releases/tag/$tag)' CHANGELOG.md
           sed -i 's/"version": "*"/"version": "$tag"/g' package.json
+
       - name: Commit changes to chosen branch
       - run: |
           git config user.name github-actions
@@ -25,10 +29,12 @@ jobs:
           git stage .
           git commit -m "Release version $tag"
           git push
-        - name: Create tag
-        - run: |
+
+      - name: Create tag
+      - run: |
           git tag $tag
           git push origin $tag
+
       env:
           tag: ${{ inputs.tag }}
           repository: ${{ GITHUB_REPOSITORY }}
